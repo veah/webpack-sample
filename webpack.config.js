@@ -1,3 +1,6 @@
+// var webpack = require('webpack')
+import webpack from 'webpack'
+
 module.exports = {
 	devtool: 'eval-source-map',
 
@@ -26,6 +29,11 @@ module.exports = {
 			
 		]
 	},
+
+	//在plugin数组中添加插件
+	plugins: [
+		new webpack.BannerPlugin("Copyright Balah Balah")
+	],
 
 	devServer: {
 		contentBase: "./public",//本地服务器所加载的页面所在目录
