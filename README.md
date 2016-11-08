@@ -27,5 +27,5 @@
 
  * 最后只要在需要css文件引入的地方引入`fileName.scss`就好
 
-        `import './main.scss'/`
+        import './main.scss'/
  * 还可以使用node-sass配置更多选项设置，具体参照[node-sass](https://github.com/sass/node-sass)
